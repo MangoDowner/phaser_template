@@ -1,0 +1,36 @@
+{
+	"name": "phaser-template",
+	"version": "1.0.0",
+	"description": "A template project for Phaser3 using Parcel & TypeScript",
+	"scripts": {
+		"start": "parcel src/index.html -p 1234",
+		"build": "parcel build src/index.html --out-dir dist",
+		"build-gh": "parcel build src/index.html --out-dir dist --public-url /phaser_template/",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "MangoDowner",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MangoDowner/phaser_template.git"
+	},
+	"homepage": "https://github.com/MangoDowner/phaser_template",
+	"devDependencies": {
+		"@types/node": "^13.13.5",
+		"minimist": ">=1.2.2",
+		"parcel-plugin-clean-easy": "^1.0.2",
+		"parcel-plugin-static-files-copy": "^2.2.1",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"parcel-bundler": "^1.12.5",
+		"phaser": "^3.22.0"
+	},
+	"parcelCleanPaths": [
+		"dist"
+	],
+	"staticFiles": {
+		"staticPath": "public",
+		"watcherGlob": "**"
+	}
+}

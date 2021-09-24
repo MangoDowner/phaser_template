@@ -1,0 +1,20 @@
+import Phaser from 'phaser'
+
+import Preloader from './scenes/preloader'
+
+export default new Phaser.Game({
+	type: Phaser.AUTO,
+	width: 800,
+	height: 600,
+	physics: {
+		default: 'arcade',
+		arcade: {
+			gravity: { y: 200 }
+		}
+	},
+	scene: [Preloader],
+	scale: {
+		zoom: 1
+	}
+})
+
